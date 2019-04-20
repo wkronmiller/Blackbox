@@ -7,12 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		495692A1222C078600B24AC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495692A0222C078600B24AC0 /* AppDelegate.swift */; };
+		495692A3222C078600B24AC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495692A2222C078600B24AC0 /* ViewController.swift */; };
+		495692A6222C078600B24AC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495692A4222C078600B24AC0 /* Main.storyboard */; };
+		495692A8222C078700B24AC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 495692A7222C078700B24AC0 /* Assets.xcassets */; };
+		495692AB222C078700B24AC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495692A9222C078700B24AC0 /* LaunchScreen.storyboard */; };
+		495692CE222C08CA00B24AC0 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499E1E37220F3319005AE421 /* Database.swift */; };
+		495692D6222C09FA00B24AC0 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 499E1E32220F32F1005AE421 /* SQLite.framework */; };
+		495692D7222C09FA00B24AC0 /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 499E1E32220F32F1005AE421 /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		495692D9222C0A1A00B24AC0 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 499E1E32220F32F1005AE421 /* SQLite.framework */; };
+		495692DA222C0A1A00B24AC0 /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 499E1E32220F32F1005AE421 /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		499E1E21220F3214005AE421 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499E1E20220F3214005AE421 /* AppDelegate.swift */; };
 		499E1E23220F3214005AE421 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499E1E22220F3214005AE421 /* ViewController.swift */; };
 		499E1E26220F3214005AE421 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 499E1E24220F3214005AE421 /* Main.storyboard */; };
 		499E1E28220F3215005AE421 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 499E1E27220F3215005AE421 /* Assets.xcassets */; };
 		499E1E2B220F3215005AE421 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 499E1E29220F3215005AE421 /* LaunchScreen.storyboard */; };
-		499E1E35220F32F8005AE421 /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 499E1E32220F32F1005AE421 /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		499E1E38220F3319005AE421 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499E1E37220F3319005AE421 /* Database.swift */; };
 		499E1E3A220F3380005AE421 /* MetricsCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499E1E39220F3380005AE421 /* MetricsCollector.swift */; };
 		499E1E3E220F338E005AE421 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 499E1E3D220F338E005AE421 /* HealthKit.framework */; };
@@ -20,13 +29,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		495692D4222C08F700B24AC0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				495692DA222C0A1A00B24AC0 /* SQLite.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		499E1E36220F32F8005AE421 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				499E1E35220F32F8005AE421 /* SQLite.framework in Embed Frameworks */,
+				495692D7222C09FA00B24AC0 /* SQLite.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -34,6 +54,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4956929E222C078600B24AC0 /* SnowRunAnalyzer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnowRunAnalyzer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		495692A0222C078600B24AC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		495692A2222C078600B24AC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		495692A5222C078600B24AC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		495692A7222C078700B24AC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		495692AA222C078700B24AC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		495692AC222C078700B24AC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		495692CD222C082E00B24AC0 /* SnowRunAnalyzer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SnowRunAnalyzer.entitlements; sourceTree = "<group>"; };
 		499E1E1D220F3214005AE421 /* BlackBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		499E1E20220F3214005AE421 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		499E1E22220F3214005AE421 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,7 +69,7 @@
 		499E1E27220F3215005AE421 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		499E1E2A220F3215005AE421 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		499E1E2C220F3215005AE421 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		499E1E32220F32F1005AE421 /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = Carthage/Build/iOS/SQLite.framework; sourceTree = SOURCE_ROOT; };
+		499E1E32220F32F1005AE421 /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = BlackBox/Common/SQLite.framework; sourceTree = SOURCE_ROOT; };
 		499E1E37220F3319005AE421 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		499E1E39220F3380005AE421 /* MetricsCollector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsCollector.swift; sourceTree = "<group>"; };
 		499E1E3B220F338E005AE421 /* BlackBox.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BlackBox.entitlements; sourceTree = "<group>"; };
@@ -50,10 +78,19 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4956929B222C078600B24AC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				495692D9222C0A1A00B24AC0 /* SQLite.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		499E1E1A220F3214005AE421 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				495692D6222C09FA00B24AC0 /* SQLite.framework in Frameworks */,
 				499E1E3E220F338E005AE421 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -61,10 +98,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4956929F222C078600B24AC0 /* SnowRunAnalyzer */ = {
+			isa = PBXGroup;
+			children = (
+				495692CD222C082E00B24AC0 /* SnowRunAnalyzer.entitlements */,
+				495692A0222C078600B24AC0 /* AppDelegate.swift */,
+				495692A2222C078600B24AC0 /* ViewController.swift */,
+				495692A4222C078600B24AC0 /* Main.storyboard */,
+				495692A7222C078700B24AC0 /* Assets.xcassets */,
+				495692A9222C078700B24AC0 /* LaunchScreen.storyboard */,
+				495692AC222C078700B24AC0 /* Info.plist */,
+			);
+			path = SnowRunAnalyzer;
+			sourceTree = "<group>";
+		};
+		495692CC222C079B00B24AC0 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				499E1E32220F32F1005AE421 /* SQLite.framework */,
+				499E1E37220F3319005AE421 /* Database.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		499E1E14220F3214005AE421 = {
 			isa = PBXGroup;
 			children = (
 				499E1E1F220F3214005AE421 /* BlackBox */,
+				4956929F222C078600B24AC0 /* SnowRunAnalyzer */,
 				499E1E1E220F3214005AE421 /* Products */,
 				499E1E3C220F338E005AE421 /* Frameworks */,
 			);
@@ -74,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				499E1E1D220F3214005AE421 /* BlackBox.app */,
+				4956929E222C078600B24AC0 /* SnowRunAnalyzer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,15 +143,14 @@
 		499E1E1F220F3214005AE421 /* BlackBox */ = {
 			isa = PBXGroup;
 			children = (
+				495692CC222C079B00B24AC0 /* Common */,
 				499E1E3B220F338E005AE421 /* BlackBox.entitlements */,
-				499E1E32220F32F1005AE421 /* SQLite.framework */,
 				499E1E20220F3214005AE421 /* AppDelegate.swift */,
 				499E1E22220F3214005AE421 /* ViewController.swift */,
 				499E1E24220F3214005AE421 /* Main.storyboard */,
 				499E1E27220F3215005AE421 /* Assets.xcassets */,
 				499E1E29220F3215005AE421 /* LaunchScreen.storyboard */,
 				499E1E2C220F3215005AE421 /* Info.plist */,
-				499E1E37220F3319005AE421 /* Database.swift */,
 				499E1E39220F3380005AE421 /* MetricsCollector.swift */,
 				499E1E3F220F4DDB005AE421 /* AudioAlerts.swift */,
 			);
@@ -107,6 +168,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4956929D222C078600B24AC0 /* SnowRunAnalyzer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 495692C3222C078700B24AC0 /* Build configuration list for PBXNativeTarget "SnowRunAnalyzer" */;
+			buildPhases = (
+				4956929A222C078600B24AC0 /* Sources */,
+				4956929B222C078600B24AC0 /* Frameworks */,
+				4956929C222C078600B24AC0 /* Resources */,
+				495692D4222C08F700B24AC0 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnowRunAnalyzer;
+			productName = SnowRunAnalyzer;
+			productReference = 4956929E222C078600B24AC0 /* SnowRunAnalyzer.app */;
+			productType = "com.apple.product-type.application";
+		};
 		499E1E1C220F3214005AE421 /* BlackBox */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 499E1E2F220F3215005AE421 /* Build configuration list for PBXNativeTarget "BlackBox" */;
@@ -135,9 +214,20 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "William Rory Kronmiller";
 				TargetAttributes = {
+					4956929D222C078600B24AC0 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					499E1E1C220F3214005AE421 = {
 						CreatedOnToolsVersion = 10.1;
 						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
 							com.apple.BackgroundModes = {
 								enabled = 1;
 							};
@@ -162,11 +252,22 @@
 			projectRoot = "";
 			targets = (
 				499E1E1C220F3214005AE421 /* BlackBox */,
+				4956929D222C078600B24AC0 /* SnowRunAnalyzer */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4956929C222C078600B24AC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				495692AB222C078700B24AC0 /* LaunchScreen.storyboard in Resources */,
+				495692A8222C078700B24AC0 /* Assets.xcassets in Resources */,
+				495692A6222C078600B24AC0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		499E1E1B220F3214005AE421 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -180,6 +281,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4956929A222C078600B24AC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				495692CE222C08CA00B24AC0 /* Database.swift in Sources */,
+				495692A3222C078600B24AC0 /* ViewController.swift in Sources */,
+				495692A1222C078600B24AC0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		499E1E19220F3214005AE421 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -195,6 +306,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		495692A4222C078600B24AC0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				495692A5222C078600B24AC0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		495692A9222C078700B24AC0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				495692AA222C078700B24AC0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		499E1E24220F3214005AE421 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -214,6 +341,52 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		495692C4222C078700B24AC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SnowRunAnalyzer/SnowRunAnalyzer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H64UU5B675;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BlackBox/Common",
+				);
+				INFOPLIST_FILE = SnowRunAnalyzer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = coffee.rory.snow.run.analyzer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		495692C5222C078700B24AC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SnowRunAnalyzer/SnowRunAnalyzer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H64UU5B675;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BlackBox/Common",
+				);
+				INFOPLIST_FILE = SnowRunAnalyzer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = coffee.rory.snow.run.analyzer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		499E1E2D220F3215005AE421 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -340,6 +513,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/BlackBox/Common",
 				);
 				INFOPLIST_FILE = BlackBox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -363,6 +537,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/BlackBox/Common",
 				);
 				INFOPLIST_FILE = BlackBox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -379,6 +554,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		495692C3222C078700B24AC0 /* Build configuration list for PBXNativeTarget "SnowRunAnalyzer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				495692C4222C078700B24AC0 /* Debug */,
+				495692C5222C078700B24AC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		499E1E18220F3214005AE421 /* Build configuration list for PBXProject "BlackBox" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
